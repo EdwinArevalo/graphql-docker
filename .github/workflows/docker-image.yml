@@ -29,7 +29,7 @@ jobs:
         docker build -t iamewas/docker-graphql:0.0.2 .
 
     - name: Push Docker Image
-      run: 
+      run: |
         docker push iamewas/docker-graphql:0.0.2
 
     # - name: Build the Docker image
