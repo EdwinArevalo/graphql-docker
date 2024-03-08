@@ -25,7 +25,7 @@ jobs:
         docker login -u $DOCKER_USER -p $DOCKER_PASSWORD
     
     - name: Build Docker Image
-      run: 
+      run: |
         docker build -t iamewas/docker-graphql:0.0.2 .
 
     - name: Push Docker Image
